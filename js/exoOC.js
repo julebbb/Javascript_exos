@@ -246,7 +246,7 @@
 //   console.log(userNb, "x ", i, "= ", (userNb * i));
 // }
 
-//-------------------------Ni oui ni none
+//-------------------------Ni oui ni non
 
 // var saisie = prompt("Tu veux jouer à ni oui, ni non ? :D");
 //
@@ -258,12 +258,220 @@
 
 //------------------------Triangle
 
-var triangle = "";
-var i = 0;
+// var triangle = "";
+// var i = 0;
+//
+// while (i < 7) {
+//   triangle = triangle + "#";
+//   console.log("\"" + triangle + "\"");
+//   i++
+// }
 
-console.log(triangle);
-while (i < 7) {
-  triangle = triangle + "#";
-  console.log(triangle);
-  i++
-}
+// var miaou = "Nano";
+//
+// for (var i = 0; i < 5; i++) {
+//   miaou = miaou + "cyte";
+//   console.log("\"" + miaou + "\"");
+// }
+
+//------------------FIZZBUZZ
+
+// for (var i = 1; i <= 100; i++) {
+//
+//   if (i%3 === 0 && i%5 === 0) {
+//
+//     console.log("FIZZBUZZ");
+//
+//   } else if (i%5 === 0) {
+//
+//     console.log("BUZZ");
+//
+//   } else if (i%3 === 0) {
+//
+//     console.log("FIZZ");
+//
+//   } else {
+//
+//     console.log(i);
+//
+//   }
+//
+// }
+
+//--------------Bonjour améliorer
+
+// function direBonjour (prenom, nom) {
+//   var message = "Bonjour, " + prenom + " " + nom;
+//   return message;
+// }
+//
+// console.log(direBonjour("Justine", "Lebbrecht"));
+
+//-------------------Carré d'un nombre
+
+// function carre(x) {
+//   var resultat = Number(x * x);
+//   return resultat;
+// }
+//
+// console.log(carre(0)); // Doit afficher 0
+// console.log(carre(2)); // Doit afficher 4
+// console.log(carre(5)); // Doit afficher 25
+
+
+//-----------------Minimun de deux nombres
+
+// function min(x, y) {
+//   if (x > y) {
+//     return y;
+//   } else {
+//     return x;
+//   }
+// }
+//
+// console.log(min(4.5, 5)); // Doit afficher 4.5
+// console.log(min(19, 9)); // Doit afficher 9
+// console.log(min(1, 1)); // Doit afficher 1
+
+//--------------------Calculatrice
+
+// function calculer(x, operation, y) {
+
+//  if (isNaN(x) === true || isNaN(y) === true) {
+
+//     return "Une des propositions n'est pas un nombre"
+
+//   } else {
+
+//     if (operation === "+") {
+
+//       var resultat = x + y;
+
+//       return resultat;
+
+//     } else if (operation === "-") {
+
+//       var resultat = x - y;
+
+//       return resultat;
+
+//     } else if (operation === "*") {
+
+//       var resultat = x * y;
+
+//       return resultat;
+
+//     } else if (operation === "/") {
+
+//       var resultat = x / y;
+
+//       return resultat;
+
+//     } else {
+
+//       return "J'ai besoin de savoir ce que tu veux que je fasse avec tes nombres !";
+
+//     }
+//   }
+// }
+//
+// console.log(calculer(4, "+", 6)); // Doit afficher 10
+// console.log(calculer(4, "-", 6)); // Doit afficher -2
+// console.log(calculer(2, "*", 0)); // Doit afficher 0
+// console.log(calculer(12, "/", 0)); // Doit afficher Infinity
+// console.log(calculer("ju", "/", 0)); // Doit afficher que c pas bon
+// console.log(calculer(12, 2, 0)); // Doit afficher qu'il me faut un opérateur
+
+
+//---------------Périmètre d'un cercle
+
+// function circle(rayon) {
+//
+//   var resultat = rayon * 2 * Math.PI;
+//   return resultat.toFixed(2);//Arrondi au dixième enlever to fixed pour le vrai result
+//
+// }
+//
+// console.log(circle(2));
+// console.log(circle(85));
+// console.log(circle(10));
+
+// -------------------Les mots
+
+// var mot = prompt("Ecrivez un mot ou un nom. N'importe quoi !");
+//
+// // !!!! Inportant à comprendre !!!
+// var reversed = "";
+// for (var i = Number(mot.length) - 1; i >= 0; i--) {
+//     reversed += mot[i];
+// }
+//
+// function compterNbVoyelles(x) {
+//   var resultat = 0;
+//
+//   if (x.toUpperCase().indexOf("A") != -1 ) {
+//     resultat++;
+//   }
+//
+//   if (x.toUpperCase().indexOf("E") != -1) {
+//     resultat++;
+//   }
+//
+//   if (x.toUpperCase().indexOf("I") != -1) {
+//     resultat++;
+//   }
+//
+//   if (x.toUpperCase().indexOf("O") != -1) {
+//     resultat++;
+//   }
+//
+//   if (x.toUpperCase().indexOf("U") != -1) {
+//     resultat++;
+//   }
+//
+//   if (x.toUpperCase().indexOf("Y") != -1) {
+//     resultat++;
+//   }
+//   return resultat;
+// }
+// var consonne = mot.length - compterNbVoyelles(mot) ;
+//
+// console.log("Le mot ", mot, "contient ", mot.length, " caractère(s) !");
+// console.log("Il s'écrit en minuscules ", mot.toLowerCase());
+// console.log("Il s'écrit en majuscules ", mot.toUpperCase());
+// console.log("Il contient ", compterNbVoyelles(mot), "voyelle(s) et ", consonne, "consonne(s)");
+// console.log("A l'envers on l'écris", reversed);
+//
+// if (reversed === mot) {
+//   console.log("C'est un palindrome !");
+// } else {
+//   console.log("Ce n'est pas un palindrome");
+// }
+
+//------------------- Les 3 mousquetaires
+
+// var mousquetaire = ["Athos", "Porthos", "Aramis"];
+//
+// console.log("Voici les trois mousquetaires :");
+//
+// for (var i = 0; i < mousquetaire.length; i++) {
+//
+//   console.log(mousquetaire[i]);
+// }
+//
+// mousquetaire.push("Artagnant");
+//
+// console.log("Et maintenant ils sont quatre !");
+//
+// mousquetaire.forEach(function (mousquetaire) {
+//   console.log(mousquetaire);
+// });
+
+
+//---------------------La somme d'un tableau
+
+// var valeurs = [11, 3, 7, 2, 9, 10];
+//
+//
+//
+// console.log(resultat);

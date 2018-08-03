@@ -204,7 +204,132 @@
 //   }
 // }
 
-//Remplir une piscine
-// 
-// longueur * largeur * 1.5;
-//  [(60 * volume)/debitEau]/100;
+//--------------------Remplir une piscine
+//
+// function temps(longueur, largeur, debitEau) {
+//   var volume = longueur * largeur * 1.5;
+//   var resultat = [(60 * volume)/debitEau]/100;
+//   return resultat;
+// }
+//
+// console.log("La piscine est remplie en ", temps(prompt("Quel est la longueur de la piscine ?"), prompt("la largeur ?"), prompt("Enfin le debit d'eau ?")) , " m3 par minutes");
+
+//---------------------Calcul de cercle
+
+// function pericercle(rayon) {
+//   var resultat = rayon * 2 * Math.PI;
+//   return resultat;
+// }
+//
+// function aircercle(rayon) {
+//   var resultat = rayon * 2;
+//   return resultat;
+// }
+//
+// var userNombre = prompt("Donner moi le rayon de votre cercle !");
+// console.log("Le périmètre du cercle est de ", pericercle(userNombre), " et l'air est de ", aircercle(userNombre));
+
+//------------------FIZZBUZZ
+
+// for (var i = 1; i <= 100; i++) {
+//
+//   if (i%3 === 0 && i%5 === 0) {
+//
+//     console.log("FIZZBUZZ");
+//
+//   } else if (i%5 === 0) {
+//
+//     console.log("BUZZ");
+//
+//   } else if (i%3 === 0) {
+//
+//     console.log("FIZZ");
+//
+//   } else {
+//
+//     console.log(i);
+//
+//   }
+//
+// }
+
+//-----------------Echequier
+
+// var str = "";
+// for (i = 0; i < 8; i++) {
+//   for (j = 0; j < 8; j++) {
+//   if ((i+j)%2 === 0) {
+//     str = str + "#";
+//
+//   } else {
+//     str = str + " ";
+//
+//   }
+//   }
+//   str = str + "\n";
+// }
+//
+// console.log(str);
+
+//----------------La matrix
+// for (i = 0; i < 4; i++) {
+//   for (j = 0; j < 4; j++) {
+//     if (j === i){
+//       console.log(1);
+//   } else {
+//     console.log(0);
+//   }}
+//   console.log("----------");
+// }
+
+//-------------------Fonction nombre pairs
+
+// function verifPairs(nombre) {
+//
+//     if (Math.round(nombre)%2 === 0) {
+//       resultat = true;
+//     } else {
+//       resultat = false;
+//     }
+//
+//     return resultat;
+// }
+//
+// console.log(verifPairs(1.4));
+
+// ----------------------- Les tirets sa compte
+
+// function correcteur(caractere) {
+//
+//   var result = "Ceci n'est pas une chaine de caractère !";
+//   //Si la chaine n'est pas un string
+//   if (typeof caractere != typeof "string") {
+//         return result;
+//   }
+//   //Autrement si elle est un string et qu'il y a un -
+//   //indexOf montre si l'element est dans le string s'il est pas il donne -1
+//   else if (caractere.indexOf("-") != -1) {
+//     //replace remplace l'element pour qu'il change tous les element avec un - il faut ajouter g pour global
+//     return caractere.replace(/-/g, "_");
+//
+//   } else {
+//     return caractere;
+//   }
+// }
+//
+// console.log(correcteur("La- vie est -plein-e de-sur-prise-"));
+// console.log(correcteur(1));
+
+//------------------------- S'entrainer avec les tableaux
+
+// var course = ["pommes", "oranges", "lait", "steak", "frites"];
+//
+// console.log("Je dois acheter des ", course[0], " des ", course[course.length - 1], "et du ", course[2]);
+
+//-----------------------Tableau d'un homme
+
+var homme = ["Lemret", "Loic", 24, "née le 12 octobre 1994"];
+
+function personne(homme) {
+
+}
