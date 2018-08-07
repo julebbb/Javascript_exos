@@ -470,8 +470,30 @@
 
 //---------------------La somme d'un tableau
 
+//  var valeurs = [11, 3, 7, 2, 9, 10];
+//  var resultat = 0;
+// for (var i = 0; i < valeurs.length; i++) {
+//   resultat += valeurs[i];
+// }
+//
+// console.log(resultat);
+
+//-------------------Le nombre plus grand d'un tableaux
+//
 // var valeurs = [11, 3, 7, 2, 9, 10];
 //
 //
+// console.log("Le plus grand nombre de ce tableau est ", Math.max(valeurs[0], valeurs[valeurs.length - 1]));
+
+
+//------------Ajouter des mots dans un tableau jusqu'a qu'ils disent stop et on sort les resultat
+
+// var mots = [];
+// mots.push(prompt("Donner moi un mot !"))
 //
-// console.log(resultat);
+// while (mots.indexOf("stop") === -1) {
+//   mots.push(prompt("Un autre !"));
+// }
+// 
+// mots.pop();
+// console.log("Tu as mis ces mots: ",  mots);
