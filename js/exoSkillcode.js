@@ -298,7 +298,7 @@
 // console.log(verifPairs(1.4));
 
 // -----------------------Factoriel
-// 
+//
 // var nombre = prompt("Donner moi un nombre");
 // var resultat = 1;
 // for (var i = 1; i < nombre; i++) {
@@ -348,9 +348,25 @@
 //-----------------------Tableau d'un homme
 
 // function personne() {
-//   var homme = ["Lemret", "Loic", 24, "née le 12 octobre 1994"];
+//   var homme = new Array("Lemret", "Loic", 24, "née le 12 octobre 1994");
 //   var info = "Cette personne s'appelle " + homme[0] + " " + homme[1] + " il a " + homme[2] + "ans et est " + homme[3];
 //   return info;
 // }
+// console.log(personne())
+
+//With multi table
+// var human = new Array([], [], []);
 //
-// console.log(personne());
+// function man(name, firstname, age, birth, numberTab) {
+//   human[numberTab].push(name);
+//   human[numberTab].push(firstname);
+//   human[numberTab].push(age);
+//   human[numberTab].push(birth);
+//   return human;
+// }
+// man("Loncke", "Léa", "19", " 1999", 0)
+// man("Lebbrecht", "Justine", "21", "14 février 1997", 1)
+//
+// console.log(man("Landine", "Cyrielle", "22", "30 juillet 1996", 2));
+
+//Le max d'un tableau
