@@ -432,3 +432,20 @@
 //
 //   console.log(task[i]);
 // }
+
+//----------------------Chercher un caractère dans une phrase
+
+// function nbCaractere (text, caractere) {
+//   var nbCaractere = 0;
+//   for (var i = 0; i < text.length; i++) {
+//     var letter = text[i].toLowerCase();
+//
+//     if (letter === caractere) {
+//       nbCaractere++;
+//     }
+//   }
+//
+//   return nbCaractere;
+// }
+//
+// console.log("Il y a exactement ", nbCaractere(prompt("Donnez moi une phrase !"), prompt("Donnez moi le caractère que vous voulez compter !")), " fois ce caractère");
