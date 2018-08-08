@@ -494,6 +494,11 @@
 // while (mots.indexOf("stop") === -1) {
 //   mots.push(prompt("Un autre !"));
 // }
-// 
+//
 // mots.pop();
-// console.log("Tu as mis ces mots: ",  mots);
+// console.log("Tu as mis ces mots: ");
+//
+// for (var i = 0; i < mots.length; i++) {
+//
+//   console.log(mots[i]);
+// }
