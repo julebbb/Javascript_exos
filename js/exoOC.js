@@ -408,33 +408,56 @@
 //
 // function compterNbVoyelles(x) {
 //   var resultat = 0;
+//  for (var i = 0; i < x.length; i++) {
+//    var lettre = x[i].toLowerCase();
 //
-//   if (x.toUpperCase().indexOf("A") != -1 ) {
+//   if (lettre === "a" || lettre === "o" || lettre === "i" || lettre === "e" || lettre === "u" || lettre === "y") {
 //     resultat++;
 //   }
 //
-//   if (x.toUpperCase().indexOf("E") != -1) {
-//     resultat++;
 //   }
 //
-//   if (x.toUpperCase().indexOf("I") != -1) {
-//     resultat++;
-//   }
-//
-//   if (x.toUpperCase().indexOf("O") != -1) {
-//     resultat++;
-//   }
-//
-//   if (x.toUpperCase().indexOf("U") != -1) {
-//     resultat++;
-//   }
-//
-//   if (x.toUpperCase().indexOf("Y") != -1) {
-//     resultat++;
-//   }
 //   return resultat;
 // }
 // var consonne = mot.length - compterNbVoyelles(mot) ;
+//
+// function changeToLeet(letter) {
+//   var letterLeet = letter;
+//
+//       switch (letter.toLowerCase()) {
+//         case "a":
+//         letterLeet = "4";
+//         break;
+//         case "b":
+//         letterLeet = "8";
+//         break;
+//         case "e":
+//         letterLeet = "3";
+//         break;
+//         case "l":
+//         letterLeet = "1";
+//         break;
+//         case "o":
+//         letterLeet = "0";
+//         break;
+//         case "s":
+//         letterLeet = "5";
+//         break;
+//     }
+//
+//     return letterLeet;
+// }
+//
+// function leet(mot) {
+//   var motLeet = "";
+//
+//   for (var i = 0; i < mot.length; i++) {
+//     motLeet = motLeet + changeToLeet(mot[i]);
+//
+//   }
+//   return motLeet;
+// }
+//
 //
 // console.log("Le mot ", mot, "contient ", mot.length, " caractère(s) !");
 // console.log("Il s'écrit en minuscules ", mot.toLowerCase());
@@ -447,6 +470,8 @@
 // } else {
 //   console.log("Ce n'est pas un palindrome");
 // }
+//
+// console.log("Il s'écrit en leet speak ", leet(mot));
 
 //------------------- Les 3 mousquetaires
 
@@ -494,6 +519,11 @@
 // while (mots.indexOf("stop") === -1) {
 //   mots.push(prompt("Un autre !"));
 // }
-// 
+//
 // mots.pop();
-// console.log("Tu as mis ces mots: ",  mots);
+// console.log("Tu as mis ces mots: ");
+//
+// for (var i = 0; i < mots.length; i++) {
+//
+//   console.log(mots[i]);
+// }

@@ -369,4 +369,83 @@
 //
 // console.log(man("Landine", "Cyrielle", "22", "30 juillet 1996", 2));
 
-//Le max d'un tableau
+//-----------------------------Le max d'un tableau numérotés
+//
+// var maxTable = new Array(10, 30, 50);
+//
+// var max = Math.max.apply(null, maxTable);
+//
+// //If max is not a number
+// if (isNaN(max)) {
+//
+//   console.log(false);
+//
+// } else {
+//
+//   console.log("Le plus grand du tableau c'est ", max);
+//
+// }
+
+//---------------------------Le max d'un tableau avec des mots
+
+// var arrString = ["Miaou", "Liberté", "Congoleximatisation", "Constellation"];
+//
+// //Array who take the result of length
+// var arrLength = [];
+//
+// for (var i = 0; i < arrString.length; i++) {
+//   arrString[i].length
+//
+//   arrLength.push(arrString[i].length);
+// }
+//
+// var max = Math.max.apply(null, arrLength);
+//
+// //If max is not a number
+// if (isNaN(max)) {
+//
+//   console.log(false);
+//
+// } else {
+//
+//   console.log("Le plus grand du tableau fais ", max, " caractères");
+//
+// }
+
+//------------Ajouter des mots dans un tableau jusqu'a qu'ils disent stop et on sort les resultat
+
+// var task = [];
+// task.push(prompt("Ecrivez vos tâches à faire"));
+//
+// //Add task while "fin" is writting
+// while (task.indexOf("fin") === -1) {
+//   task.push(prompt("Ensuite ?"));
+// }
+//
+// //Delete the last task "fin"
+// task.pop();
+//
+// console.log("Ce que tu dois faire: ");
+//
+// //Display task
+// for (var i = 0; i < task.length; i++) {
+//
+//   console.log(task[i]);
+// }
+
+//----------------------Chercher un caractère dans une phrase
+
+// function nbCaractere (text, caractere) {
+//   var nbCaractere = 0;
+//   for (var i = 0; i < text.length; i++) {
+//     var letter = text[i].toLowerCase();
+//
+//     if (letter === caractere) {
+//       nbCaractere++;
+//     }
+//   }
+//
+//   return nbCaractere;
+// }
+//
+// console.log("Il y a exactement ", nbCaractere(prompt("Donnez moi une phrase !"), prompt("Donnez moi le caractère que vous voulez compter !")), " fois ce caractère");
