@@ -1,5 +1,5 @@
 //Rock Paper Scissors
-/*
+
 var userResult = 0;
 var computerResult = 0;
 var computerMake = ["", "Pierre !", "Feuille !", "Ciseaux !"];
@@ -63,4 +63,4 @@ if (userResult === 3) {
   //If computer win
   alert("Hi hi hi j'ai gagné !");
 
-}*/
+}
